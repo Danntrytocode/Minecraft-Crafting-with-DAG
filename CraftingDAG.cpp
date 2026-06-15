@@ -101,4 +101,9 @@ int main(){
     minecraft.tambahDependensi(book,enchantTable);
     minecraft.tambahDependensi(diamond,enchantTable);
     minecraft.tambahDependensi(obsidian,enchantTable);
+
+    //memanggil fungsi
+    minecraft.cariUrutanCrafting();
+
+    return 0;
 }
