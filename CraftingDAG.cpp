@@ -72,6 +72,12 @@ public:
                 }
             }
         }
-
+        //output hasil akhir
+        cout << "==================================" << endl;
+        cout << "Urutan Crafting Enchantment Table:" << endl;
+        cout << "==================================" << endl;
+        for(int i = 0; i < jumlahHasil; i++) {
+            cout << i + 1 << ". " << namaItem[hasilUrutan[i]] << endl;
+        }
     }
 };
