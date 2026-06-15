@@ -58,5 +58,20 @@ public:
             //Simpan item tersebut ke daftar hasil
             hasilUrutan[jumlahHasil] = itemSekarang;
             jumlahHasil++;
+        
+            //3.Hapus panah ke item turunan (kurangi in-degree mereka)
+            for(int i = 0; i < jumlahItem; i++) {
+                if(hubMatrix[itemSekarang][i] == 1) {
+                    inDegree[i]--;
+                    
+                    //Jika prasyarat item turunan sudah habis (0), antrekan!
+                    if(inDegree[i] == 0) {
+                        antrean[rear] = i;
+                        rear++;
+                    }
+                }
+            }
+        }
+
     }
 };
