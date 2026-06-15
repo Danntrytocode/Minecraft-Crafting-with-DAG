@@ -93,4 +93,12 @@ int main(){
     int diamond = minecraft.tambahItem("Diamond");
     int obsidian = minecraft.tambahItem("Obsidian");
     int enchantTable = minecraft.tambahItem("Enchantment Table");
+
+    //Menambahkan Arah Resep (Bahan Baku -> Hasil)
+    minecraft.tambahDependensi(sugarCane,paper);
+    minecraft.tambahDependensi(paper,book);
+    minecraft.tambahDependensi(leather,book);
+    minecraft.tambahDependensi(book,enchantTable);
+    minecraft.tambahDependensi(diamond,enchantTable);
+    minecraft.tambahDependensi(obsidian,enchantTable);
 }
