@@ -84,4 +84,13 @@ public:
 
 int main(){
     CraftingDAG minecraft;
+
+    //Input Nilai Item
+    int sugarCane = minecraft.tambahItem("Sugar Cane");
+    int paper = minecraft.tambahItem("Paper");
+    int leather = minecraft.tambahItem("Leather");
+    int book = minecraft.tambahItem("Book");
+    int diamond = minecraft.tambahItem("Diamond");
+    int obsidian = minecraft.tambahItem("Obsidian");
+    int enchantTable = minecraft.tambahItem("Enchantment Table");
 }
