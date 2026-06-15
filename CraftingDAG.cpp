@@ -81,3 +81,7 @@ public:
         }
     }
 };
+
+int main(){
+    CraftingDAG minecraft;
+}
