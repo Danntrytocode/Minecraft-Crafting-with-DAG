@@ -32,4 +32,9 @@ public:
         jumlahItem++;
         return jumlahItem - 1;
     }
+    //fungsi untuk menyambung panah/sisi
+    void tambahDependensi(int indeksBahan, int indeksHasil) {
+        hubMatrix[indeksBahan][indeksHasil] = 1;
+        inDegree[indeksHasil]++; // Tambah jumlah prasyarat item hasil
+    }
 };
