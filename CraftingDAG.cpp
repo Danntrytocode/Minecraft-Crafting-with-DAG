@@ -37,4 +37,9 @@ public:
         hubMatrix[indeksBahan][indeksHasil] = 1;
         inDegree[indeksHasil]++; // Tambah jumlah prasyarat item hasil
     }
+    //metode utama Topological Sorting (Algoritma Kahn)
+    void cariUrutanCrafting() {
+        int hasilUrutan[10];
+        int jumlahHasil = 0;
+    }
 };
