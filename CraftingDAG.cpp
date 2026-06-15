@@ -26,4 +26,10 @@ public:
             }
         }
     }
+    //metode regis item baru
+    int tambahItem(string nama) {
+        namaItem[jumlahItem] = nama;
+        jumlahItem++;
+        return jumlahItem - 1;
+    }
 };
