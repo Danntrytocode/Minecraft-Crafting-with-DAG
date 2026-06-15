@@ -13,4 +13,17 @@ private:
     int antrean[10];
     int front;
     int rear;
+public:
+    //Constructor untuk inisialisasi nilai awal
+    CraftingDAG() {
+        jumlahItem = 0;
+        front = 0;
+        rear = 0;
+        for(int i = 0; i < 10; i++) {
+            inDegree[i] = 0;
+            for(int j = 0; j < 10; j++) {
+                hubMatrix[i][j] = 0;
+            }
+        }
+    }
 };
