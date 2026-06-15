@@ -41,5 +41,14 @@ public:
     void cariUrutanCrafting() {
         int hasilUrutan[10];
         int jumlahHasil = 0;
+        
+        //1.cari semua bahan dasar (in-degree 0) dan masukkan ke Antrean
+        for(int i = 0; i < jumlahItem; i++) {
+            if(inDegree[i] == 0) {
+                antrean[rear] = i;
+                rear++;
+            }
+        }
+
     }
 };
